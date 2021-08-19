@@ -1,0 +1,407 @@
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.editor-grid-container div {
+  text-align: left;
+}
+
+.editor-grid-container,
+.printarea {
+  text-align: center;
+  height: auto;
+  max-width: 1007px;
+  margin: 0 auto;
+}
+
+.editor-grid-container .header-cell,
+.editor-grid-container .header-cell-wide,
+.printarea {
+  line-height: 0px;
+}
+
+.editor-grid-container .editor-cell {
+  margin-top: 10px;
+}
+
+.editor-cell {
+  display: inline-block; /*inline table?*/
+}
+
+div.header-cell {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 480px;
+}
+
+div.header-cell-wide {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 960px;
+}
+/* line height classes */
+.lhnarrow .ql-editor {
+  line-height: 1;
+}
+
+.lhnormal .ql-editor {
+  line-height: 1.4;
+}
+
+.lhwide .ql-editor {
+  line-height: 1.8;
+}
+
+.lhxwide .ql-editor {
+  line-height: 2.2;
+}
+
+.ql-snow .ql-editor {
+  overflow-y: clip;
+}
+
+/* card size classes */
+.threeby5 {
+  /*landscape + flip on short edge*/
+  width: 480px;
+  height: 288px;
+}
+
+.threeby4 {
+  /*portrait + flip on long edge + requires narrow margins*/
+  width: 384px;
+  height: 288px;
+}
+
+.two5by3 {
+  /*portrait + flip on long edge + requires narrow margins*/
+  width: 384px;
+  height: 240px;
+}
+
+.twoby35 {
+  /*portrait + flip on long edge + requires narrow margins*/
+  width: 336px;
+  height: 192px;
+}
+
+/*card spacing on print*/
+.cardspacing0 {
+  margin: 0px;
+}
+.cardspacing1 {
+  margin: 0.5px;
+}
+
+.cardspacing2 {
+  margin: 1px;
+}
+
+.cardspacing3 {
+  margin: 1.5px;
+}
+
+.cardspacing5 {
+  margin: 2.5px;
+}
+
+/*border style*/
+.printarea .bsnone > div {
+  border-style: none;
+}
+.printarea .bssolid > div {
+  border: 1px solid black;
+}
+.printarea .bscorners.bs1.bsblack > div {
+  border-style: none;
+  background: linear-gradient(to right, black 1px, transparent 1px) 0 0,
+    linear-gradient(to right, black 1px, transparent 1px) 0 100%,
+    linear-gradient(to left, black 1px, transparent 1px) 100% 0,
+    linear-gradient(to left, black 1px, transparent 1px) 100% 100%,
+    linear-gradient(to bottom, black 1px, transparent 1px) 0 0,
+    linear-gradient(to bottom, black 1px, transparent 1px) 100% 0,
+    linear-gradient(to top, black 1px, transparent 1px) 0 100%,
+    linear-gradient(to top, black 1px, transparent 1px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+.printarea .bscorners.bs2.bsblack > div {
+  border-style: none;
+  background: linear-gradient(to right, black 2px, transparent 2px) 0 0,
+    linear-gradient(to right, black 2px, transparent 2px) 0 100%,
+    linear-gradient(to left, black 2px, transparent 2px) 100% 0,
+    linear-gradient(to left, black 2px, transparent 2px) 100% 100%,
+    linear-gradient(to bottom, black 2px, transparent 2px) 0 0,
+    linear-gradient(to bottom, black 2px, transparent 2px) 100% 0,
+    linear-gradient(to top, black 2px, transparent 2px) 0 100%,
+    linear-gradient(to top, black 2px, transparent 2px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+.printarea .bscorners.bs3.bsblack > div {
+  border-style: none;
+  background: linear-gradient(to right, black 3px, transparent 3px) 0 0,
+    linear-gradient(to right, black 3px, transparent 3px) 0 100%,
+    linear-gradient(to left, black 3px, transparent 3px) 100% 0,
+    linear-gradient(to left, black 3px, transparent 3px) 100% 100%,
+    linear-gradient(to bottom, black 3px, transparent 3px) 0 0,
+    linear-gradient(to bottom, black 3px, transparent 3px) 100% 0,
+    linear-gradient(to top, black 3px, transparent 3px) 0 100%,
+    linear-gradient(to top, black 3px, transparent 3px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+.printarea .bscorners.bs5.bsblack > div {
+  border-style: none;
+  background: linear-gradient(to right, black 5px, transparent 5px) 0 0,
+    linear-gradient(to right, black 5px, transparent 5px) 0 100%,
+    linear-gradient(to left, black 5px, transparent 5px) 100% 0,
+    linear-gradient(to left, black 5px, transparent 5px) 100% 100%,
+    linear-gradient(to bottom, black 5px, transparent 5px) 0 0,
+    linear-gradient(to bottom, black 5px, transparent 5px) 100% 0,
+    linear-gradient(to top, black 5px, transparent 5px) 0 100%,
+    linear-gradient(to top, black 5px, transparent 5px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+.printarea .bscorners.bs1.bslightgrey > div {
+  border-style: none;
+  background: linear-gradient(to right, lightgrey 1px, transparent 1px) 0 0,
+    linear-gradient(to right, lightgrey 1px, transparent 1px) 0 100%,
+    linear-gradient(to left, lightgrey 1px, transparent 1px) 100% 0,
+    linear-gradient(to left, lightgrey 1px, transparent 1px) 100% 100%,
+    linear-gradient(to bottom, lightgrey 1px, transparent 1px) 0 0,
+    linear-gradient(to bottom, lightgrey 1px, transparent 1px) 100% 0,
+    linear-gradient(to top, lightgrey 1px, transparent 1px) 0 100%,
+    linear-gradient(to top, lightgrey 1px, transparent 1px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+.printarea .bscorners.bs2.bslightgrey > div {
+  border-style: none;
+  background: linear-gradient(to right, lightgrey 2px, transparent 2px) 0 0,
+    linear-gradient(to right, lightgrey 2px, transparent 2px) 0 100%,
+    linear-gradient(to left, lightgrey 2px, transparent 2px) 100% 0,
+    linear-gradient(to left, lightgrey 2px, transparent 2px) 100% 100%,
+    linear-gradient(to bottom, lightgrey 2px, transparent 2px) 0 0,
+    linear-gradient(to bottom, lightgrey 2px, transparent 2px) 100% 0,
+    linear-gradient(to top, lightgrey 2px, transparent 2px) 0 100%,
+    linear-gradient(to top, lightgrey 2px, transparent 2px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+.printarea .bscorners.bs3.bslightgrey > div {
+  border-style: none;
+  background: linear-gradient(to right, lightgrey 3px, transparent 3px) 0 0,
+    linear-gradient(to right, lightgrey 3px, transparent 3px) 0 100%,
+    linear-gradient(to left, lightgrey 3px, transparent 3px) 100% 0,
+    linear-gradient(to left, lightgrey 3px, transparent 3px) 100% 100%,
+    linear-gradient(to bottom, lightgrey 3px, transparent 3px) 0 0,
+    linear-gradient(to bottom, lightgrey 3px, transparent 3px) 100% 0,
+    linear-gradient(to top, lightgrey 3px, transparent 3px) 0 100%,
+    linear-gradient(to top, lightgrey 3px, transparent 3px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+.printarea .bscorners.bs5.bslightgrey > div {
+  border-style: none;
+  background: linear-gradient(to right, lightgrey 5px, transparent 5px) 0 0,
+    linear-gradient(to right, lightgrey 5px, transparent 5px) 0 100%,
+    linear-gradient(to left, lightgrey 5px, transparent 5px) 100% 0,
+    linear-gradient(to left, lightgrey 5px, transparent 5px) 100% 100%,
+    linear-gradient(to bottom, lightgrey 5px, transparent 5px) 0 0,
+    linear-gradient(to bottom, lightgrey 5px, transparent 5px) 100% 0,
+    linear-gradient(to top, lightgrey 5px, transparent 5px) 0 100%,
+    linear-gradient(to top, lightgrey 5px, transparent 5px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+.printarea .bsdotted > div {
+  border-style: dotted;
+}
+.printarea .bsdashed > div {
+  border-style: dashed;
+}
+.printarea .bsdouble > div {
+  border-style: double;
+}
+.printarea .bsgroove > div {
+  border-style: groove;
+}
+.printarea .bsridge > div {
+  border-style: ridge;
+}
+.printarea .bsinset > div {
+  border-style: inset;
+}
+.printarea .bsoutset > div {
+  border-style: outset;
+}
+.printarea .bs1 > div {
+  border-width: 1px;
+}
+.printarea .bs2 > div {
+  border-width: 2px;
+}
+.printarea .bs3 > div {
+  border-width: 3px;
+}
+.printarea .bs5 > div {
+  border-width: 5px;
+}
+.printarea .bsblack > div {
+  border-color: black;
+}
+.printarea .bslightgrey > div {
+  border-color: lightgray;
+}
+
+.printarea .bsfront.back > div {
+  border-style: none;
+  background: unset;
+  background-repeat: unset;
+  background-size: unset;
+}
+
+.printarea .bscorners.bsfront.back > div {
+  background: unset;
+  background-repeat: unset;
+  background-size: unset;
+}
+
+.printarea .bsback:not(.back) > div {
+  border-style: none;
+  background: unset;
+  background-repeat: unset;
+  background-size: unset;
+}
+
+.printarea .bscorners.bsback:not(.back) > div {
+  background: unset;
+  background-repeat: unset;
+  background-size: unset;
+}
+
+/*card padding*/
+.editor-cell.cardpadding0 .ql-snow .ql-editor {
+  padding: 0px 3px;
+}
+.editor-cell.cardpadding5 .ql-snow .ql-editor {
+  padding: 5px 8px;
+}
+.editor-cell.cardpadding10 .ql-snow .ql-editor {
+  padding: 10px 13px;
+}
+.editor-cell.cardpadding15 .ql-snow .ql-editor {
+  padding: 15px 18px;
+}
+.editor-cell.cardpadding20 .ql-snow .ql-editor {
+  padding: 20px 23px;
+}
+.editor-cell.cardpadding25 .ql-snow .ql-editor {
+  padding: 25px 28px;
+}
+
+/*font size mods*/
+.fssmall div.editor-cell h1 {
+  font-size: 1.5em; /*2*/
+}
+.fssmall div.editor-cell h2 {
+  font-size: 1.125em; /*1.5*/
+}
+.fssmall div.editor-cell h3 {
+  font-size: 0.8775em; /*1.17*/
+}
+.fssmall div.editor-cell h4 {
+  font-size: 0.75em; /*1*/
+}
+.fssmall div.editor-cell h5 {
+  font-size: 0.5625em; /*.75*/
+}
+.fssmall div.editor-cell h6 {
+  font-size: 0.5025em; /*.67*/
+}
+.fssmall div.editor-cell p {
+  font-size: 9.75px; /*13px*/
+}
+
+.fslarge div.editor-cell h1 {
+  font-size: 2.5em; /*2*/
+}
+.fslarge div.editor-cell h2 {
+  font-size: 1.875em; /*1.5*/
+}
+.fslarge div.editor-cell h3 {
+  font-size: 1.4625em; /*1.17*/
+}
+.fslarge div.editor-cell h4 {
+  font-size: 1.25em; /*1*/
+}
+.fslarge div.editor-cell h5 {
+  font-size: 0.9375em; /*.75*/
+}
+.fslarge div.editor-cell h6 {
+  font-size: 0.8375em; /*.67*/
+}
+.fslarge div.editor-cell p {
+  font-size: 16.25px; /*13px*/
+}
+
+.fsxlarge div.editor-cell h1 {
+  font-size: 3em; /*2*/
+}
+.fsxlarge div.editor-cell h2 {
+  font-size: 2.25em; /*1.5*/
+}
+.fsxlarge div.editor-cell h3 {
+  font-size: 1.725em; /*1.17*/
+}
+.fsxlarge div.editor-cell h4 {
+  font-size: 1.5em; /*1*/
+}
+.fsxlarge div.editor-cell h5 {
+  font-size: 1.125em; /*.75*/
+}
+.fsxlarge div.editor-cell h6 {
+  font-size: 1em; /*.67*/
+}
+.fsxlarge div.editor-cell p {
+  font-size: 19.5px; /*13px*/
+}
+
+.fsxxlarge div.editor-cell h1 {
+  font-size: 4em; /*2*/
+}
+.fsxxlarge div.editor-cell h2 {
+  font-size: 3em; /*1.5*/
+}
+.fsxxlarge div.editor-cell h3 {
+  font-size: 2.34em; /*1.17*/
+}
+.fsxxlarge div.editor-cell h4 {
+  font-size: 2em; /*1*/
+}
+.fsxxlarge div.editor-cell h5 {
+  font-size: 1.5em; /*.75*/
+}
+.fsxxlarge div.editor-cell h6 {
+  font-size: 1.334em; /*.67*/
+  font-weight: normal;
+}
+.fsxxlarge div.editor-cell p {
+  font-size: 26px; /*13px*/
+}
+
+/*overrides*/
+div.center {
+  text-align: center;
+}
+
+.noheight {
+  height: unset;
+}
