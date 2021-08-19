@@ -181,8 +181,8 @@
     <div class="header-cell-wide center">
       <button on:click={print}> Print </button>
       <button on:click={clear}> Clear </button>
-      <button on:click={copyState}> Copy State to Clipboard </button>
-      <button on:click={loadState}> Load State from Clipboard </button>
+      <button on:click={copyState}> Copy Save data to Clipboard </button>
+      <button on:click={loadState}> Load Save data from Clipboard </button>
       <!-- <button on:click={() => alert(JSON.stringify(state))}> debug </button> -->
     </div>
     <div class="header-cell-wide">
