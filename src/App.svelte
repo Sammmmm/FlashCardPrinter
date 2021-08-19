@@ -601,8 +601,8 @@
       </label>
     </div>
     <div class="header-cell-wide" />
-    <div class="editor-cell {classes} noheight"><h3>Front</h3></div>
-    <div class="editor-cell {classes} noheight"><h3>Back</h3></div>
+    <div class="header-cell-alt {classes}"><h3>Front</h3></div>
+    <div class="header-cell-alt {classes}"><h3>Back</h3></div>
     {#each state.cards as { front, back }, i}
       <div class="editor-cell {classes}">
         <div
@@ -636,7 +636,6 @@
   <div class="printarea">
     {#each chunk(state.cards, state.cardsPerSheet) as chunks, i}
       {#if i > 0}<div class="pagebreak" />{/if}
-
       {#each chunks as chunk, j}
         <div class="editor-cell {classes}">
           <div class="ql-container ql-snow editor">
