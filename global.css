@@ -44,6 +44,7 @@ div.header-cell-wide {
   margin-bottom: 10px;
   width: 960px;
 }
+
 /* line height classes */
 .lhnarrow .ql-editor {
   line-height: 1;
@@ -402,6 +403,7 @@ div.center {
   text-align: center;
 }
 
-.noheight {
+.header-cell-alt {
+  display: inline-block;
   height: unset;
 }
