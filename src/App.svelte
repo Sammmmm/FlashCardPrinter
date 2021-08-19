@@ -661,6 +661,13 @@
       {/each}
     {/each}
   </div>
+  <div class="editor-grid-container">
+    <br />
+    Questions? Issues? Reach out at
+    <a href="https://github.com/Sammmmm/FlashCardPrinter"
+      >https://github.com/Sammmmm/FlashCardPrinter</a
+    >
+  </div>
 </main>
 
 <style>
