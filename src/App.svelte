@@ -264,7 +264,7 @@
           name="borderStyle"
           value="bsdashed"
         />
-        Dotted
+        Dashed
       </label>
       <label>
         <input
