@@ -283,7 +283,7 @@
           value="bsgroove"
         />
         Groove
-      </label>
+      </label><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <label>
         <input
           type="radio"
@@ -319,6 +319,15 @@
           value="bscorners"
         />
         Corners Only (enable bg on print)
+      </label>
+      <label>
+        <input
+          type="radio"
+          bind:group={state.styles.borderStyleClass}
+          name="borderStyle"
+          value="bscorners bsdots"
+        />
+        Corner Cut indicators (enable bg on print)
       </label>
       <br />
       Size:
