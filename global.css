@@ -269,6 +269,10 @@ div.header-cell-wide {
   background-size: unset;
 }
 
+.printarea .bscorners.bsdots > div.ql-snow {
+  background-size: 3px 3px;
+}
+
 .printarea .bscorners.bsfront.back > div {
   background: unset;
   background-repeat: unset;
