@@ -402,6 +402,19 @@ div.header-cell-wide {
   font-size: 26px; /*13px*/
 }
 
+/*img max size*/
+.img50 .ql-container.ql-snow .ql-editor img {
+  max-width: 50%;
+}
+
+.img25 .ql-container.ql-snow .ql-editor img {
+  max-width: 25%;
+}
+
+.img75 .ql-container.ql-snow .ql-editor img {
+  max-width: 75%;
+}
+
 /*overrides*/
 div.center {
   text-align: center;
