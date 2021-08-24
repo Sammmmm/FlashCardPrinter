@@ -46,7 +46,7 @@
         break;
     }
   }
-  $: classes = `${state.styles.sizeClass} ${state.styles.lineHeightClass} ${state.styles.cardSpacingClass} ${state.styles.borderColorClass} ${state.styles.borderSizeClass} ${state.styles.borderStyleClass} ${state.styles.borderSideClass} ${state.styles.cardPaddingClass}`;
+  $: classes = `${state.styles.sizeClass} ${state.styles.lineHeightClass} ${state.styles.cardSpacingClass} ${state.styles.borderColorClass} ${state.styles.borderSizeClass} ${state.styles.borderStyleClass} ${state.styles.borderSideClass} ${state.styles.cardPaddingClass} ${state.styles.imgSizeClass}`;
 
   $: {
     window.localStorage.setItem(
@@ -105,6 +105,7 @@
         borderSideClass: "bsboth",
         fontSizeClass: "fsnormal",
         cardPaddingClass: "cardpadding10",
+        imgSizeClass: "img100",
       },
     };
   }
@@ -609,7 +610,46 @@
         25px
       </label>
     </div>
-    <div class="header-cell-wide" />
+    <div class="header-cell">
+      <h4>Max Img Size</h4>
+      <label>
+        <input
+          type="radio"
+          bind:group={state.styles.imgSizeClass}
+          name="imgSize"
+          value="img100"
+        />
+        100%
+      </label>
+      <label>
+        <input
+          type="radio"
+          bind:group={state.styles.imgSizeClass}
+          name="imgSize"
+          value="img75"
+        />
+        75%
+      </label>
+      <label>
+        <input
+          type="radio"
+          bind:group={state.styles.imgSizeClass}
+          name="imgSize"
+          value="img50"
+        />
+        50%
+      </label>
+      <label>
+        <input
+          type="radio"
+          bind:group={state.styles.imgSizeClass}
+          name="imgSize"
+          value="img25"
+        />
+        25%
+      </label>
+    </div>
+    <div class="header-cell" />
     <div class="header-cell-alt {classes}"><h3>Front</h3></div>
     <div class="header-cell-alt {classes}"><h3>Back</h3></div>
     {#each state.cards as { front, back }, i}
