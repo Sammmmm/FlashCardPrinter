@@ -424,3 +424,7 @@ div.center {
   display: inline-block;
   height: unset;
 }
+
+.hidden {
+  visibility: hidden;
+}
